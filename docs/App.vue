@@ -11,5 +11,5 @@
 </script>
 
 <style lang="scss">
-
+@import "css/wp-admin.min.css";
 </style>
