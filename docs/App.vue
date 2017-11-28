@@ -12,4 +12,5 @@
 
 <style lang="scss">
 @import "css/wp-admin.min.css";
+@import "css/admin-bar.min.css";
 </style>
