@@ -12,6 +12,7 @@ export default new Router({
     routes: [
         {
             path: '/',
+            name: 'Button',
             component: Home
         }
     ]
