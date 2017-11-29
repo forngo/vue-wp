@@ -11,7 +11,7 @@
 </script>
 
 <style lang="scss">
-@import "css/wp-admin.min.css";
+@import "css/wp-admin.css";
 @import "css/admin-bar.min.css";
 
 #wpbody-content,

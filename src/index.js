@@ -1,9 +1,9 @@
-import Test from './components/test'
+import WPButton from './components/button'
 
 import config, { setOptions } from './utils/config'
 
 const components = {
-    Test
+    WPButton
 }
 
 components.install = (Vue, options = {}) => {

@@ -5,7 +5,8 @@
             <div id="wpbody-content" aria-label="Main content" tabindex="0" style="overflow: hidden;">
                 <div class="wrap">
                     <br><br>
-                    <MyTestComponent :msg="'hello world'"></MyTestComponent>
+                    <wp-button>Primary button</wp-button>
+                    <wp-button disabled>Primary button disabled</wp-button>
                 </div>
             </div>
         </div>
