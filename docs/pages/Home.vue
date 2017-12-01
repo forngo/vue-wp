@@ -5,8 +5,17 @@
             <div id="wpbody-content" aria-label="Main content" tabindex="0" style="overflow: hidden;">
                 <div class="wrap">
                     <br><br>
-                    <wp-button>Primary button</wp-button>
-                    <wp-button disabled>Primary button disabled</wp-button>
+                    <wp-button type="primary">Primary button</wp-button>
+                    <wp-button type="primary" disabled>Primary button disabled</wp-button>
+                    <br><br>
+                    <wp-button type="secondary">Secondary button</wp-button>
+                    <wp-button type="secondary" disabled>Secondary button disabled</wp-button>
+                    <br><br>
+                    <wp-button type="primary" hero>Primary hero button</wp-button>
+                    <wp-button type="primary" hero disabled>Primary hero button disabled</wp-button>
+                    <br><br>
+                    <wp-button type="secondary" hero>Secondary hero button</wp-button>
+                    <wp-button type="secondary" hero disabled>Secondary hero button disabled</wp-button>
                 </div>
             </div>
         </div>
