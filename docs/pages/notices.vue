@@ -1,14 +1,6 @@
 <template>
-    <section class="home">
-        <app-header home></app-header>
-        <div id="wpbody" role="main">
-            <div id="wpbody-content" aria-label="Main content" tabindex="0" style="overflow: hidden;">
-                <div class="wrap">
-                    <br><br>
-                    Test
-                </div>
-            </div>
-        </div>
+    <section>
+        <app-header></app-header>
         <app-footer></app-footer>
     </section>
 </template>
