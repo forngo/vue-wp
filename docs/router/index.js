@@ -4,7 +4,7 @@ import Router from 'vue-router'
 Vue.use(Router)
 
 const Home = (r) => require(['../pages/Home'], r)
-const Notices = (r) => require(['../pages/notices'], r)
+// INJECT: Add new component demo page declaration.
 
 export default new Router({
     mode: 'history',
@@ -16,10 +16,6 @@ export default new Router({
             name: 'Button',
             component: Home
         },
-        {
-            path: '/notices',
-            name: 'Notices',
-            component: Notices
-        }
+        // INJECT: Add new component demo page router.
     ]
 })

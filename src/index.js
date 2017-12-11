@@ -1,9 +1,11 @@
 import WPButton from './components/button'
+// INJECT: Import the UI component from the module index
 
 import config, { setOptions } from './utils/config'
 
 const components = {
-    WPButton
+    WPButton,
+    // INJECT: Add new components to declarations
 }
 
 components.install = (Vue, options = {}) => {
