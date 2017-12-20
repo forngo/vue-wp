@@ -1,5 +1,6 @@
 import WPButton from './components/button'
 import WPNotice from './components/wp-notice'
+import { WPTabs, WPTabItem } from './components/wp-tabs'
 // INJECT: Import the UI component from the module index
 
 import config, { setOptions } from './utils/config'
@@ -7,6 +8,8 @@ import config, { setOptions } from './utils/config'
 const components = {
     WPButton,
     WPNotice,
+    WPTabItem,
+    WPTabs,
     // INJECT: Add new components to declarations
 }
 

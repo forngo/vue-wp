@@ -5,6 +5,7 @@ Vue.use(Router)
 
 const Home = (r) => require(['../pages/Home'], r)
 const Notice = (r) => require(['../pages/wp-notice'], r)
+const Tabs = (r) => require(['../pages/wp-tabs'], r)
 // INJECT: Add new component demo page declaration.
 
 export default new Router({
@@ -21,6 +22,11 @@ export default new Router({
             path: '/wp-notice',
             name: 'Notice',
             component: Notice
+        },
+        {
+            path: '/wp-tabs',
+            name: 'Tabs',
+            component: Tabs
         }
         // INJECT: Add new component demo page router.
     ]
