@@ -3,6 +3,7 @@ import WPNotice from './components/wp-notice'
 import { WPTabs, WPTabItem } from './components/wp-tabs'
 import WPSpinner from './components/wp-spinner'
 import WPPluginGrid from './components/wp-plugin-grid'
+import WPTooltip from './components/wp-tooltip'
 // INJECT: Import the UI component from the module index
 
 import config, { setOptions } from './utils/config'
@@ -14,6 +15,7 @@ const components = {
     WPTabs,
     WPSpinner,
     WPPluginGrid,
+    WPTooltip,
     // INJECT: Add new components to declarations
 }
 

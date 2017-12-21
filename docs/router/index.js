@@ -8,6 +8,7 @@ const Notice = (r) => require(['../pages/wp-notice'], r)
 const Tabs = (r) => require(['../pages/wp-tabs'], r)
 const Spinner = (r) => require(['../pages/wp-spinner'], r)
 const PluginGrid = (r) => require(['../pages/wp-plugin-grid'], r)
+const Tooltip = (r) => require(['../pages/wp-tooltip'], r)
 // INJECT: Add new component demo page declaration.
 
 export default new Router({
@@ -39,6 +40,11 @@ export default new Router({
             path: '/wp-plugin-grid',
             name: 'Plugin Grid',
             component: PluginGrid
+        },
+        {
+            path: '/wp-tooltip',
+            name: 'Tooltip',
+            component: Tooltip
         }
         // INJECT: Add new component demo page router.
     ]
