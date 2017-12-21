@@ -1,0 +1,23 @@
+// Colors.
+$wp_blue:           #0073aa;
+$medium_blue:       #00a0d2;
+$ultra_dark_gray:   #191e23;
+$dark_gray:         #23282d;
+$base_gray:         #32373c;
+$dark_silver_gray:  #82878c;
+$silver_gray:       #a0a5aa;
+$light_silver_gray: #b4b9be;
+$accent_red:        #dc3232;
+$accent_orange:     #f56e28;
+$accent_yellow:     #ffb900;
+$accent_green:      #46B450;
+$accent_purple:     #826eb4;
+$white:             #fff;
+
+$colors: (
+    "primary": ($ultra_dark_gray, $white),
+);
+
+// Sizes
+$weight-normal: normal;
+$radius-large: 3px;
