@@ -1,27 +1,22 @@
 <template>
-    <div class="plugin-card plugin-card-jetpack">
+    <div class="plugin-card">
 		<div class="plugin-card-top">
 			<div class="name column-name">
 				<h3>
-					<a href="#" class="">
-					    Jetpack by WordPress.com						
-                        <img src="#" class="plugin-icon" alt="">
+					<a :href="url">
+					    {{name}}
+                        <img :src="img" class="plugin-icon" :alt="name">
 					</a>
 				</h3>
 			</div>
 			<div class="action-links">
 				<ul class="plugin-action-buttons">
-                    <li>
-                        <a class="install-now button" href="#">Install Now</a>
-                    </li>
-                    <li>
-                        <a href="#" class="thickbox open-plugin-details-modal">More Details</a>
-                    </li>
+                    <slot name="action-buttons"></slot>
                 </ul>
             </div>
 			<div class="desc column-description">
 				<slot name="description"></slot>
-				<p class="authors"> <cite>By <a href="#">Author</a></cite></p>
+				<p class="authors" v-if="author"><cite>By <a :href="authorUrl">{{author}}</a></cite></p>
 			</div>
 		</div>
 		<div class="plugin-card-bottom">
@@ -33,6 +28,12 @@
 <script>
 export default {
   name: "wp-plugin-grid",
-  props: {}
+  props: {
+      name:      String,
+      img:       String,
+      url:       String,
+      author:    String,
+      authorUrl: String
+  }
 };
 </script>
