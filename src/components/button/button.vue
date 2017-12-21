@@ -1,5 +1,5 @@
 <template>
-<a :href="msg" :class="classes" :disabled="disabled" @click="handleClick">
+<a :class="classes" :disabled="disabled" @click="handleClick">
     <slot></slot>
 </a>
 </template>
@@ -17,8 +17,7 @@ export default {
         },
         hero: Boolean,
         loading: Boolean,
-        disabled: Boolean,
-        msg: String
+        disabled: Boolean
     },
     computed: {
         classes () {
