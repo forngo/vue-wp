@@ -19,5 +19,22 @@ $colors: (
 );
 
 // Sizes
-$weight-normal: normal;
-$radius-large: 3px;
+$weight-normal:    normal;
+$radius-large:     3px;
+
+// Popdown
+$popdown-max-height:             auto;
+$popdown-bg-color:               $base_gray;
+$popdown-box-shadow:             0 3px 5px rgba(0,0,0,0.2);
+$popdown-font-size:              12px;
+$popdown-item-padding:           5px 15px;
+$popdown-item-min-width:         100px;
+$popdown-item-color-hover:       $wp_blue;
+$popdown-item-bg-color-disabled: $dark_gray;
+$popdown-divided-color:          $medium_blue;
+
+// Z-index lists.
+$zindex-popdown : 1050;
+
+/* Disabled cursor */
+$cursor-disabled : not-allowed;

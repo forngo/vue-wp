@@ -9,6 +9,7 @@ const Tabs = (r) => require(['../pages/wp-tabs'], r)
 const Spinner = (r) => require(['../pages/wp-spinner'], r)
 const PluginGrid = (r) => require(['../pages/wp-plugin-grid'], r)
 const Tooltip = (r) => require(['../pages/wp-tooltip'], r)
+const Popdown = (r) => require(['../pages/wp-popdown'], r)
 // INJECT: Add new component demo page declaration.
 
 export default new Router({
@@ -45,7 +46,12 @@ export default new Router({
             path: '/wp-tooltip',
             name: 'Tooltip',
             component: Tooltip
-        }
+        },
+        {
+            path: '/wp-popdown',
+            name: 'Popdown',
+            component: Popdown
+        },
         // INJECT: Add new component demo page router.
     ]
 })

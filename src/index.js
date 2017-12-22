@@ -4,6 +4,7 @@ import { WPTabs, WPTabItem } from './components/wp-tabs'
 import WPSpinner from './components/wp-spinner'
 import WPPluginGrid from './components/wp-plugin-grid'
 import WPTooltip from './components/wp-tooltip'
+import { WPPopdown, WPPopdownMenu, WPPopdownItem } from './components/wp-popdown'
 // INJECT: Import the UI component from the module index
 
 import config, { setOptions } from './utils/config'
@@ -16,6 +17,9 @@ const components = {
     WPSpinner,
     WPPluginGrid,
     WPTooltip,
+    WPPopdownItem,
+    WPPopdownMenu,
+    WPPopdown,
     // INJECT: Add new components to declarations
 }
 

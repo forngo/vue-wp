@@ -1,0 +1,65 @@
+/**
+ * Dropdown Style
+ */
+.wp-popdown {
+    display: inline-block;
+    &__popover {
+        position: absolute;
+        overflow: visible;
+        z-index: $zindex-popdown;
+    }
+}
+
+.wp-popdown-menu {
+    position: relative;
+    padding: 10px 0;
+    width: inherit;
+    max-height: $popdown-max-height;
+    background-color: $popdown-bg-color;
+    box-shadow: $popdown-box-shadow;
+    list-style: none; // overflow-y: auto;
+    z-index: $zindex-popdown;
+    &:before {
+        position: absolute;
+        top: -8px;
+        right: 22px;
+        content: ' ';
+        display: block;
+        width: 0;
+        height: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+        border-bottom: 8px solid #32373c;
+    }
+    &__item {
+        @include ellipsis();
+        display: block;
+        padding: $popdown-item-padding;
+        min-width: $popdown-item-min-width;
+        line-height: 1.5;
+        transition: all .3s;
+        margin-bottom: 0;
+        cursor: pointer;
+        color: $light_silver_gray;
+        &:hover {
+            color: $popdown-item-color-hover;
+        }
+        &--disabled {
+            color: $popdown-item-bg-color-disabled;
+            cursor: $cursor-disabled;
+            &:hover {
+                background-color: $popdown-bg-color;
+            }
+        }
+        &--divided {
+            position: relative;
+            margin-top: 6px;
+            border-top: 1px solid $popdown-divided-color;
+            &:before {
+                content: '';
+                display: block;
+                height: 6px;
+            }
+        }
+    }
+}
