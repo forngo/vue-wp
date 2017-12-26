@@ -8,11 +8,21 @@ export default {
     props: {
         active: Boolean,
     },
+    data() {
+        return {
+            isActive: this.active || false
+        }
+    },
+    watch: {
+        active(value) {
+            this.isActive = value
+        }
+    },
     computed: {
         classes () {
             return [
                 'spinner',
-                this.active ? 'is-active' : ''
+                this.isActive ? 'is-active' : ''
             ];
         }
     },
