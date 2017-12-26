@@ -5,6 +5,7 @@ import WPSpinner from './components/wp-spinner'
 import WPPluginGrid from './components/wp-plugin-grid'
 import WPTooltip from './components/wp-tooltip'
 import { WPPopdown, WPPopdownMenu, WPPopdownItem } from './components/wp-popdown'
+import WPMetabox from './components/wp-metabox'
 // INJECT: Import the UI component from the module index
 
 import config, { setOptions } from './utils/config'
@@ -20,6 +21,7 @@ const components = {
     WPPopdownItem,
     WPPopdownMenu,
     WPPopdown,
+    WPMetabox,
     // INJECT: Add new components to declarations
 }
 
