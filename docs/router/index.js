@@ -12,6 +12,7 @@ const Tooltip = (r) => require(['../pages/wp-tooltip'], r)
 const Popdown = (r) => require(['../pages/wp-popdown'], r)
 const Metabox = (r) => require(['../pages/wp-metabox'], r)
 const Accordions = (r) => require(['../pages/wp-accordions'], r)
+const Taglist = (r) => require(['../pages/wp-taglist'], r)
 // INJECT: Add new component demo page declaration.
 
 export default new Router({
@@ -63,6 +64,11 @@ export default new Router({
             path: '/wp-accordions',
             name: 'Accordions',
             component: Accordions
+        },
+        {
+            path: '/wp-taglist',
+            name: 'Taglist',
+            component: Taglist
         },
         // INJECT: Add new component demo page router.
     ]

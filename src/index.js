@@ -7,6 +7,7 @@ import WPTooltip from './components/wp-tooltip'
 import { WPPopdown, WPPopdownMenu, WPPopdownItem } from './components/wp-popdown'
 import WPMetabox from './components/wp-metabox'
 import { WPAccordions, WPAccordionItem } from './components/wp-accordions'
+import { WPTaglist, WPTag } from './components/wp-taglist'
 // INJECT: Import the UI component from the module index
 
 import config, { setOptions } from './utils/config'
@@ -25,6 +26,8 @@ const components = {
     WPMetabox,
     WPAccordionItem,
     WPAccordions,
+    WPTag,
+    WPTaglist,
     // INJECT: Add new components to declarations
 }
 
