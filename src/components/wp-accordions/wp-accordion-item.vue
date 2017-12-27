@@ -32,6 +32,7 @@ export default {
         handleToggle( accordionId ) {
             this.selected = accordionId;
             this.$parent.activeAccordion = accordionId;
+            this.$emit('accordionToggle', accordionId);
         }
     },
 }

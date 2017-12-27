@@ -45,6 +45,7 @@ export default {
     methods: {
         handleToggle(event) {
             this.closed = !this.closed;
+            this.$emit('metaboxToggle', event);
         }
     },
 }
