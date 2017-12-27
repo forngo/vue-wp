@@ -11,6 +11,7 @@ const PluginGrid = (r) => require(['../pages/wp-plugin-grid'], r)
 const Tooltip = (r) => require(['../pages/wp-tooltip'], r)
 const Popdown = (r) => require(['../pages/wp-popdown'], r)
 const Metabox = (r) => require(['../pages/wp-metabox'], r)
+const Accordions = (r) => require(['../pages/wp-accordions'], r)
 // INJECT: Add new component demo page declaration.
 
 export default new Router({
@@ -57,6 +58,11 @@ export default new Router({
             path: '/wp-metabox',
             name: 'Metabox',
             component: Metabox
+        },
+        {
+            path: '/wp-accordions',
+            name: 'Accordions',
+            component: Accordions
         },
         // INJECT: Add new component demo page router.
     ]
