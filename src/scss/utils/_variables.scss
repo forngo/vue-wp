@@ -36,5 +36,8 @@ $popdown-divided-color:          $medium_blue;
 // Z-index lists.
 $zindex-popdown : 1050;
 
-/* Disabled cursor */
+// Disabled cursor
 $cursor-disabled : not-allowed;
+
+// Toast animation
+$speed-slow: 150ms !default;

@@ -9,6 +9,7 @@ import WPMetabox from './components/wp-metabox'
 import { WPAccordions, WPAccordionItem } from './components/wp-accordions'
 import { WPTaglist, WPTag } from './components/wp-taglist'
 import { WPMiniTabs, WPMiniTabItem }  from './components/wp-mini-tabs'
+import WPToast from './components/wp-toast'
 // INJECT: Import the UI component from the module index
 
 import config, { setOptions } from './utils/config'
@@ -45,6 +46,12 @@ components.install = (Vue, options = {}) => {
             Vue.component(component.name, component)
         }
     }
+
+    Vue.prototype.$toast = WPToast
 }
 
 export default components
+
+export {
+    WPToast
+}

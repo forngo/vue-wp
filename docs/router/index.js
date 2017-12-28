@@ -14,6 +14,7 @@ const Metabox = (r) => require(['../pages/wp-metabox'], r)
 const Accordions = (r) => require(['../pages/wp-accordions'], r)
 const Taglist = (r) => require(['../pages/wp-taglist'], r)
 const MiniTabs = (r) => require(['../pages/wp-mini-tabs'], r)
+const Toast = (r) => require(['../pages/wp-toast'], r)
 // INJECT: Add new component demo page declaration.
 
 export default new Router({
@@ -75,6 +76,11 @@ export default new Router({
             path: '/wp-mini-tabs',
             name: 'Mini Tabs',
             component: MiniTabs
+        },
+        {
+            path: '/wp-toast',
+            name: 'Toast',
+            component: Toast
         },
         // INJECT: Add new component demo page router.
     ]

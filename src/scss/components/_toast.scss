@@ -1,0 +1,72 @@
+$snackbar-background-color: #000 !default;
+
+.wp-toasts {
+    position: fixed;
+    display: flex;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2em;
+    overflow: hidden;
+    z-index: 1000;
+    pointer-events: none;
+    .toast {
+        background: #fff;
+        border-left: 4px solid #fff;
+        box-shadow: 0 1px 1px 0 rgba( 0, 0, 0, 0.1 );
+        margin: 5px 15px 2px;
+        padding: 1px 12px;
+        display: inline-flex;
+        animation-duration: $speed-slow;
+        margin: 0.5em 0;
+        pointer-events: auto;
+        div {
+            margin: 0.5em 0;
+            padding: 2px;
+        }
+
+        &.success {
+            border-left-color: $accent_green;
+        }
+        &.info {
+            border-left-color: $medium_blue;
+        }
+        &.error {
+            border-left-color: $accent_red;
+        }
+        &.warning {
+            border-left-color: $accent_yellow;
+        }
+    }
+
+    .toast {
+        // Modifers
+        &.is-top {
+            align-self: center;
+        }
+        &.is-top-right {
+            align-self: flex-end;
+        }
+        &.is-bottom {
+            align-self: center;
+        }
+        &.is-bottom-right {
+            align-self: flex-end;
+        }
+        &.is-toast {
+            opacity: 0.92;
+        }
+    }
+
+    // Modifers
+    &.is-top {
+        flex-direction: column;
+    }
+    &.is-bottom {
+        flex-direction: column-reverse;
+    }
+    &.has-custom-container {
+        position: absolute;
+    }
+}
