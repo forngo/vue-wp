@@ -13,6 +13,7 @@ const Popdown = (r) => require(['../pages/wp-popdown'], r)
 const Metabox = (r) => require(['../pages/wp-metabox'], r)
 const Accordions = (r) => require(['../pages/wp-accordions'], r)
 const Taglist = (r) => require(['../pages/wp-taglist'], r)
+const MiniTabs = (r) => require(['../pages/wp-mini-tabs'], r)
 // INJECT: Add new component demo page declaration.
 
 export default new Router({
@@ -69,6 +70,11 @@ export default new Router({
             path: '/wp-taglist',
             name: 'Taglist',
             component: Taglist
+        },
+        {
+            path: '/wp-mini-tabs',
+            name: 'Mini Tabs',
+            component: MiniTabs
         },
         // INJECT: Add new component demo page router.
     ]

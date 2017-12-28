@@ -1,0 +1,9 @@
+.wp-mini-tabs {
+    &.categorydiv {
+        .tabs-panel {
+            max-height: initial;
+            min-height: initial;
+            padding: .9em;
+        }
+    }
+}
