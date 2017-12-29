@@ -1,6 +1,6 @@
-import config from './config'
-import { removeElement } from './assist'
-import { oneOf } from './assist'
+import config from '../utils/config'
+import { removeElement } from '../utils/assist'
+import { oneOf } from '../utils/assist'
 
 export default {
     props: {

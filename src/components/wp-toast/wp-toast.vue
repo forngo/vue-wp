@@ -13,7 +13,7 @@
 
 <script>
     import config from '../../utils/config'
-    import NoticeMixin from '../../utils/NoticeMixin.js'
+    import NoticeMixin from '../../mixins/NoticeMixin.js'
 
     export default {
         mixins: [NoticeMixin],
