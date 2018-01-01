@@ -36,7 +36,7 @@
 </template>
 
 <script>
-
+import { oneOf } from '../../utils/assist';
 import { removeElement } from '../../utils/assist'
 import config from '../../utils/config'
 
@@ -50,6 +50,13 @@ export default {
         props: Object,
         events: Object,
         title: String,
+        type: {
+            type: String,
+            default: 'mini',
+            validator (value) {
+                return oneOf(value, ['mini', 'large']);
+            }
+        },
         width: {
             type: [String, Number],
             default: 960
@@ -93,7 +100,8 @@ export default {
     computed: {
         classes () {
             return [
-                'wp-modal-container'
+                'wp-modal-container',
+                'wp-modal-' + this.type
             ];
         },
         cancelOptions() {
