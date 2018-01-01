@@ -11,6 +11,7 @@ export default {
     name: 'wp-button',
     props: {
         type: {
+            default: 'secondary',
             validator (value) {
                 return oneOf(value, ['primary', 'secondary']);
             }
