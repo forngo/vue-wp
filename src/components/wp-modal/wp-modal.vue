@@ -26,7 +26,7 @@
                     <slot v-else/>
                 </div>
 
-                <div class="wp-modal-footer">
+                <div class="wp-modal-footer" v-if="$slots['modal-footer']">
                     <slot name="modal-footer"></slot>
                 </div>
 

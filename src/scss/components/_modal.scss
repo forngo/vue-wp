@@ -71,6 +71,16 @@
 
     }
 
+    .wp-modal-content {
+        padding: 20px 16px;
+    }
+
+    .wp-modal-footer {
+        border-top: 1px solid #ddd;
+        background: #fcfcfc;
+        padding: 10px 16px;
+    }
+
     .wp-modal-container {
         position: relative;
         background: #fff;
@@ -82,16 +92,34 @@
             -webkit-font-smoothing: subpixel-antialiased !important;
         }
 
-    }
+        &.wp-modal-large {
 
-    .wp-modal-content {
-        padding: 20px 16px;
-    }
+            width: 100%;
 
-    .wp-modal-footer {
-        border-top: 1px solid #ddd;
-        background: #fcfcfc;
-        padding: 10px 16px;
+            .wp-modal-head {
+                min-height: 50px;
+                &__title {
+                    font-size: 22px;
+                    line-height: 50px;
+                }
+
+                .wp-modal-close {
+                    border-left: 1px solid #ddd;
+                    height: 50px;
+                    width: 50px;
+                    line-height: 50px;
+                    span {
+                        line-height: 50px;
+                    }
+                }
+            }
+
+            .wp-modal-content {
+                box-shadow: inset 0 4px 4px -4px rgba(0,0,0,.1);
+            }
+
+        }
+
     }
 
 }
