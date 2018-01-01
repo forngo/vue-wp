@@ -16,6 +16,7 @@ const Taglist = (r) => require(['../pages/wp-taglist'], r)
 const MiniTabs = (r) => require(['../pages/wp-mini-tabs'], r)
 const Toast = (r) => require(['../pages/wp-toast'], r)
 const Modal = (r) => require(['../pages/wp-modal'], r)
+const ThemeBox = (r) => require(['../pages/wp-theme-box'], r)
 // INJECT: Add new component demo page declaration.
 
 export default new Router({
@@ -87,6 +88,11 @@ export default new Router({
             path: '/wp-modal',
             name: 'Modal',
             component: Modal
+        },
+        {
+            path: '/wp-theme-box',
+            name: 'Theme Box',
+            component: ThemeBox
         },
         // INJECT: Add new component demo page router.
     ]

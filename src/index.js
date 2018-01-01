@@ -11,6 +11,7 @@ import { WPTaglist, WPTag } from './components/wp-taglist'
 import { WPMiniTabs, WPMiniTabItem }  from './components/wp-mini-tabs'
 import WPToast from './components/wp-toast'
 import WPModalProgrammatic, { WPModal } from './components/wp-modal'
+import WPThemeBox from './components/wp-theme-box'
 // INJECT: Import the UI component from the module index
 
 import config, { setOptions } from './utils/config'
@@ -34,6 +35,7 @@ const components = {
     WPMiniTabItem,
     WPMiniTabs,
     WPModal,
+    WPThemeBox,
     // INJECT: Add new components to declarations
 }
 
