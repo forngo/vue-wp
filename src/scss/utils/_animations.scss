@@ -87,3 +87,40 @@
 .fadeInUp {
     animation-name: fadeInUp;
 }
+
+// Zoom In
+.zoom-in-enter-active,
+.zoom-in-leave-active {
+    transition: opacity $speed-slow ease-out;
+    .animation-content,
+    .animation-content {
+        transition: transform $speed-slow ease-out;
+    }
+}
+.zoom-in-enter,
+.zoom-in-leave-active {
+    opacity: 0;
+    .animation-content,
+    .animation-content {
+        transform: scale(0.95);
+    }
+}
+
+
+// Zoom Out
+.zoom-out-enter-active,
+.zoom-out-leave-active {
+    transition: opacity $speed-slow ease-out;
+    .animation-content,
+    .animation-content {
+        transition: transform $speed-slow ease-out;
+    }
+}
+.zoom-out-enter,
+.zoom-out-leave-active {
+    opacity: 0;
+    .animation-content,
+    .animation-content {
+        transform: scale(1.05);
+    }
+}
