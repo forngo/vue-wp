@@ -10,6 +10,7 @@ import { WPAccordions, WPAccordionItem } from './components/wp-accordions'
 import { WPTaglist, WPTag } from './components/wp-taglist'
 import { WPMiniTabs, WPMiniTabItem }  from './components/wp-mini-tabs'
 import WPToast from './components/wp-toast'
+import WPModalProgrammatic, { WPModal } from './components/wp-modal'
 // INJECT: Import the UI component from the module index
 
 import config, { setOptions } from './utils/config'
@@ -32,6 +33,7 @@ const components = {
     WPTaglist,
     WPMiniTabItem,
     WPMiniTabs,
+    WPModal,
     // INJECT: Add new components to declarations
 }
 
@@ -48,10 +50,12 @@ components.install = (Vue, options = {}) => {
     }
 
     Vue.prototype.$toast = WPToast
+    Vue.prototype.$modal = WPModalProgrammatic
 }
 
 export default components
 
 export {
-    WPToast
+    WPToast,
+    WPModalProgrammatic
 }

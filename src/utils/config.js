@@ -1,6 +1,7 @@
 const config = {
     defaultContainerElement: null,
     defaultToastDuration: 2000,
+    defaultModalScroll: 'clip',
     defaultNoticeQueue: true
 }
 

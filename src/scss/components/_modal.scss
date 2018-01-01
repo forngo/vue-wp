@@ -1,0 +1,97 @@
+.wp-modal {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    display: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    z-index: 99999;
+    
+    &.is-active {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+    }
+
+    .wp-modal-background {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        background-color: rgba(0, 0, 0, 0.7);
+    }
+
+    .wp-modal-head {
+        border-bottom: 1px solid #ddd;
+        background: #fcfcfc;
+        min-height: 36px;
+
+        &__title {
+            color: #444;
+            font-size: 18px;
+            font-weight: 600;
+            line-height: 36px;
+            margin: 0;
+            padding: 0 60px 0 16px;
+            text-rendering: optimizelegibility;
+        }
+
+        .wp-modal-close {
+            position: absolute;
+            cursor: pointer;
+            background: transparent;
+            border: none;
+            top: 0;
+            right: 0;
+            width: 36px;
+            height: 36px;
+            padding: 0;
+            line-height: 36px;
+            text-align: center;
+            color: #858585;
+
+            &:hover {
+                color: $medium_blue;
+            }
+
+            span {
+                line-height: 36px;
+            }
+
+        }
+
+    }
+
+    .wp-modal-container {
+        position: relative;
+        background: #fff;
+        box-shadow: 0 3px 6px rgba(0,0,0,.3);
+        z-index: 99999;
+        min-width: 300px;
+
+        * {
+            -webkit-font-smoothing: subpixel-antialiased !important;
+        }
+
+    }
+
+    .wp-modal-content {
+        padding: 20px 16px;
+    }
+
+    .wp-modal-footer {
+        border-top: 1px solid #ddd;
+        background: #fcfcfc;
+        padding: 10px 16px;
+    }
+
+}

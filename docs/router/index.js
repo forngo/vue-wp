@@ -15,6 +15,7 @@ const Accordions = (r) => require(['../pages/wp-accordions'], r)
 const Taglist = (r) => require(['../pages/wp-taglist'], r)
 const MiniTabs = (r) => require(['../pages/wp-mini-tabs'], r)
 const Toast = (r) => require(['../pages/wp-toast'], r)
+const Modal = (r) => require(['../pages/wp-modal'], r)
 // INJECT: Add new component demo page declaration.
 
 export default new Router({
@@ -81,6 +82,11 @@ export default new Router({
             path: '/wp-toast',
             name: 'Toast',
             component: Toast
+        },
+        {
+            path: '/wp-modal',
+            name: 'Modal',
+            component: Modal
         },
         // INJECT: Add new component demo page router.
     ]
