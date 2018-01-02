@@ -32,6 +32,7 @@
     "vue-wp"
   ],
   "dependencies": {
+    "tether-shepherd": "^1.8.1",
     "vue": "^2.3.3"
   },
   "devDependencies": {

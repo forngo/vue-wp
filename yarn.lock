@@ -820,10 +820,6 @@ base64-js@^1.0.2:
   version "1.2.1"
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.2.1.tgz#a91947da1f4a516ea38e5b4ec0ec3773675e0886"
 
-batch-processor@^1.0.0:
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/batch-processor/-/batch-processor-1.0.0.tgz#75c95c32b748e0850d10c2b168f6bdbe9891ace8"
-
 bcrypt-pbkdf@^1.0.0:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/bcrypt-pbkdf/-/bcrypt-pbkdf-1.0.1.tgz#63bc5dcb61331b92bc05fd528953c33462a06f8d"
@@ -1701,12 +1697,6 @@ ejs@^2.5.6:
 electron-to-chromium@^1.2.7, electron-to-chromium@^1.3.27:
   version "1.3.27"
   resolved "https://registry.yarnpkg.com/electron-to-chromium/-/electron-to-chromium-1.3.27.tgz#78ecb8a399066187bb374eede35d9c70565a803d"
-
-element-resize-detector@^1.1.12:
-  version "1.1.12"
-  resolved "https://registry.yarnpkg.com/element-resize-detector/-/element-resize-detector-1.1.12.tgz#8b3fd6eedda17f9c00b360a0ea2df9927ae80ba2"
-  dependencies:
-    batch-processor "^1.0.0"
 
 elliptic@^6.0.0:
   version "6.4.0"
@@ -4968,6 +4958,16 @@ tar@^2.0.0, tar@^2.2.1:
     block-stream "*"
     fstream "^1.0.2"
     inherits "2"
+
+tether-shepherd@^1.8.1:
+  version "1.8.1"
+  resolved "https://registry.yarnpkg.com/tether-shepherd/-/tether-shepherd-1.8.1.tgz#4fd9b2fdd9059f04b6c4249456d5ae145a3e9223"
+  dependencies:
+    tether "^1.0.1"
+
+tether@^1.0.1:
+  version "1.4.3"
+  resolved "https://registry.yarnpkg.com/tether/-/tether-1.4.3.tgz#fd547024c47b6e5c9b87e1880f997991a9a6ad54"
 
 text-table@~0.2.0:
   version "0.2.0"
