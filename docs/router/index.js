@@ -17,6 +17,7 @@ const MiniTabs = (r) => require(['../pages/wp-mini-tabs'], r)
 const Toast = (r) => require(['../pages/wp-toast'], r)
 const Modal = (r) => require(['../pages/wp-modal'], r)
 const ThemeBox = (r) => require(['../pages/wp-theme-box'], r)
+const Pagination = (r) => require(['../pages/wp-pagination'], r)
 // INJECT: Add new component demo page declaration.
 
 export default new Router({
@@ -93,6 +94,11 @@ export default new Router({
             path: '/wp-theme-box',
             name: 'Theme Box',
             component: ThemeBox
+        },
+        {
+            path: '/wp-pagination',
+            name: 'Pagination',
+            component: Pagination
         },
         // INJECT: Add new component demo page router.
     ]

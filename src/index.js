@@ -12,6 +12,7 @@ import { WPMiniTabs, WPMiniTabItem }  from './components/wp-mini-tabs'
 import WPToast from './components/wp-toast'
 import WPModalProgrammatic, { WPModal } from './components/wp-modal'
 import WPThemeBox from './components/wp-theme-box'
+import WPPagination from './components/wp-pagination'
 // INJECT: Import the UI component from the module index
 
 import Shepherd from 'tether-shepherd'
@@ -37,6 +38,7 @@ const components = {
     WPMiniTabs,
     WPModal,
     WPThemeBox,
+    WPPagination,
     // INJECT: Add new components to declarations
 }
 

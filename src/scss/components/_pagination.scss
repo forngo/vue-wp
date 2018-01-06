@@ -1,0 +1,179 @@
+.wp-pagination {
+
+    margin: -0.25rem;
+    -webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+    text-align: center;
+
+    a {
+        text-decoration: none;
+    }
+    
+    .wp-pagination-list {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        text-align: center;
+        -ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+    }
+
+    &.is-small {
+        font-size: 0.75rem;
+    }
+
+    &.is-medium {
+        font-size: 1.25rem;
+    }
+
+    &.is-large {
+        font-size: 1.5rem;
+    }
+
+    &.is-simple {
+        justify-content: normal;
+    }
+    .is-current {
+        pointer-events: none;
+        cursor: not-allowed;
+    }
+
+    .wp-pagination-previous,
+    .wp-pagination-next,
+    .wp-pagination-link,
+    .wp-pagination-ellipsis {
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border: 1px solid transparent;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        height: 1.5em;
+        -webkit-box-pack: start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        padding-bottom: calc(0.375em - 1px);
+        padding-left: calc(0.625em - 1px);
+        padding-right: calc(0.625em - 1px);
+        padding-top: calc(0.375em - 1px);
+        position: relative;
+        vertical-align: top;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        padding-left: 0.5em;
+        padding-right: 0.5em;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        margin: 0.25rem;
+        text-align: center;
+    }
+
+    .wp-pagination-previous:focus,
+    .wp-pagination-previous.is-focused,
+    .wp-pagination-previous:active,
+    .wp-pagination-previous.is-active,
+    .wp-pagination-next:focus,
+    .wp-pagination-next.is-focused,
+    .wp-pagination-next:active,
+    .wp-pagination-next.is-active,
+    .wp-pagination-link:focus,
+    .wp-pagination-link.is-focused,
+    .wp-pagination-link:active,
+    .wp-pagination-link.is-active,
+    .wp-pagination-ellipsis:focus,
+    .wp-pagination-ellipsis.is-focused,
+    .wp-pagination-ellipsis:active,
+    .wp-pagination-ellipsis.is-active {
+        outline: none;
+    }
+
+    .wp-pagination-previous[disabled],
+    .wp-pagination-next[disabled],
+    .wp-pagination-link[disabled],
+    .wp-pagination-ellipsis[disabled] {
+        cursor: not-allowed;
+    }
+
+    .wp-pagination-previous,
+    .wp-pagination-next,
+    .wp-pagination-link {
+        border-color: #ccc;
+        background: #e5e5e5;
+        min-width: 1em;
+        color: $wp_blue;
+        
+        &:hover {
+            color: #fff;
+            background: $wp_blue;
+            border-color: $wp_blue;
+        }
+
+        &:focus {
+            border-color: $wp_blue;
+        }
+
+        &:active {
+            -webkit-box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
+	        box-shadow: inset 0 1px 2px rgba(10, 10, 10, 0.2);
+        }
+
+        &[disabled] {
+            background-color: #dbdbdb;
+            border-color: #dbdbdb;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            color: #7a7a7a;
+            opacity: 0.5;
+        }
+
+    }
+
+    .wp-pagination-link {
+        &.is-current {
+            background-color: $wp_blue;
+            border-color: $wp_blue;
+            color: #fff;
+        }
+    }
+
+    .wp-pagination-ellipsis {
+        color: #b5b5b5;
+        pointer-events: none;
+    }
+
+    /*
+    .wp-pagination-next,
+    .wp-pagination-previous {
+        padding-left: 0.25em;
+        padding-right: 0.25em;
+        white-space: nowrap;
+        &.is-disabled {
+            pointer-events: none;
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+    }*/
+
+}
