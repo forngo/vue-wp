@@ -14,6 +14,7 @@ import WPModalProgrammatic, { WPModal } from './components/wp-modal'
 import WPThemeBox from './components/wp-theme-box'
 // INJECT: Import the UI component from the module index
 
+import Shepherd from 'tether-shepherd'
 import config, { setOptions } from './utils/config'
 
 const components = {
@@ -53,6 +54,7 @@ components.install = (Vue, options = {}) => {
 
     Vue.prototype.$toast = WPToast
     Vue.prototype.$modal = WPModalProgrammatic
+    Vue.prototype.$pointers = Shepherd
 }
 
 export default components
