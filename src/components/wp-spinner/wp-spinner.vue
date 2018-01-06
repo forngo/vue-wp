@@ -21,6 +21,7 @@ export default {
     computed: {
         classes () {
             return [
+                'wp-spinner',
                 'spinner',
                 this.isActive ? 'is-active' : ''
             ];
