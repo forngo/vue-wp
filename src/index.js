@@ -13,6 +13,7 @@ import WPToast from './components/wp-toast'
 import WPModalProgrammatic, { WPModal } from './components/wp-modal'
 import WPThemeBox from './components/wp-theme-box'
 import WPPagination from './components/wp-pagination'
+import { WPTable, WPTableColumn } from './components/wp-table'
 // INJECT: Import the UI component from the module index
 
 import Shepherd from 'tether-shepherd'
@@ -39,6 +40,8 @@ const components = {
     WPModal,
     WPThemeBox,
     WPPagination,
+    WPTable,
+    WPTableColumn,
     // INJECT: Add new components to declarations
 }
 

@@ -18,6 +18,7 @@ const Toast = (r) => require(['../pages/wp-toast'], r)
 const Modal = (r) => require(['../pages/wp-modal'], r)
 const ThemeBox = (r) => require(['../pages/wp-theme-box'], r)
 const Pagination = (r) => require(['../pages/wp-pagination'], r)
+const Table = (r) => require(['../pages/wp-table'], r)
 // INJECT: Add new component demo page declaration.
 
 export default new Router({
@@ -99,6 +100,11 @@ export default new Router({
             path: '/wp-pagination',
             name: 'Pagination',
             component: Pagination
+        },
+        {
+            path: '/wp-table',
+            name: 'Table',
+            component: Table
         },
         // INJECT: Add new component demo page router.
     ]

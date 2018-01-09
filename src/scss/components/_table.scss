@@ -1,0 +1,55 @@
+@-webkit-keyframes spinAround {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+@keyframes spinAround {
+    from {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(359deg);
+        transform: rotate(359deg);
+    }
+}
+
+.wp-table {
+    &.is-loading {
+        position: relative;
+        pointer-events: none;
+        opacity: 0.5;
+        &:after {
+            -webkit-animation: spinAround .5s infinite linear;
+            animation: spinAround .5s infinite linear;
+            border: 2px solid $medium_blue;
+            border-radius: 290486px;
+            border-right-color: transparent;
+            border-top-color: transparent;
+            content: "";
+            display: block;
+            height: 1em;
+            position: relative;
+            width: 1em;
+            position: absolute;
+            top: 4em;
+            left: calc(50% - 2.5em);
+            width: 2em;
+            height: 2em;
+            border-width: 0.25em;
+        }
+    }
+
+    .checkbox-cell {
+        width: 40px;
+        input {
+            margin: 0;
+        }
+    }
+}
