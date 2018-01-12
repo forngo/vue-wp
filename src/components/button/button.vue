@@ -17,7 +17,6 @@ export default {
             }
         },
         hero: Boolean,
-        loading: Boolean,
         disabled: Boolean
     },
     computed: {
