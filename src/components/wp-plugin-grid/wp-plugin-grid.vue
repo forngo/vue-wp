@@ -27,13 +27,13 @@
 
 <script>
 export default {
-  name: "wp-plugin-grid",
-  props: {
-      name:      String,
-      img:       String,
-      url:       String,
-      author:    String,
-      authorUrl: String
-  }
+	name: "wp-plugin-grid",
+	props: {
+    	name:      String,
+    	img:       String,
+    	url:       String,
+    	author:    String,
+    	authorUrl: String
+	}
 };
 </script>

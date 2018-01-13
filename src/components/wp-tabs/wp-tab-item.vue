@@ -8,8 +8,7 @@
     export default {
         name: 'wp-tab-item',
         props: {
-            label: String,
-            disabled: Boolean
+            label: String
         },
         data() {
             return {
