@@ -20,8 +20,7 @@
 export default {
     name: 'wp-accordion-item',
     props: {
-        label: String,
-        disabled: Boolean
+        label: String
     },
     computed: {
         normalizedId: function () {
