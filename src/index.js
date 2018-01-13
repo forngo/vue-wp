@@ -1,47 +1,49 @@
-import WPButton from './components/button'
-import WPNotice from './components/wp-notice'
-import { WPTabs, WPTabItem } from './components/wp-tabs'
-import WPSpinner from './components/wp-spinner'
-import WPPluginGrid from './components/wp-plugin-grid'
-import WPTooltip from './components/wp-tooltip'
-import { WPPopdown, WPPopdownMenu, WPPopdownItem } from './components/wp-popdown'
-import WPMetabox from './components/wp-metabox'
 import { WPAccordions, WPAccordionItem } from './components/wp-accordions'
-import { WPTaglist, WPTag } from './components/wp-taglist'
 import { WPMiniTabs, WPMiniTabItem }  from './components/wp-mini-tabs'
-import WPToast from './components/wp-toast'
-import WPModalProgrammatic, { WPModal } from './components/wp-modal'
-import WPThemeBox from './components/wp-theme-box'
-import WPPagination from './components/wp-pagination'
+import { WPPopdown, WPPopdownMenu, WPPopdownItem } from './components/wp-popdown'
 import { WPTable, WPTableColumn } from './components/wp-table'
+import { WPTabs, WPTabItem } from './components/wp-tabs'
+import { WPTaglist, WPTag } from './components/wp-taglist'
+import WPButton from './components/button'
+import WPMetabox from './components/wp-metabox'
+import WPModalProgrammatic, { WPModal } from './components/wp-modal'
+import WPNotice from './components/wp-notice'
+import WPPagination from './components/wp-pagination'
+import WPPluginGrid from './components/wp-plugin-grid'
+import WPSpinner from './components/wp-spinner'
+import WPThemeBox from './components/wp-theme-box'
+import WPToast from './components/wp-toast'
+import WPTooltip from './components/wp-tooltip'
 // INJECT: Import the UI component from the module index
 
 import Shepherd from 'tether-shepherd'
 import config, { setOptions } from './utils/config'
 
+import './scss/main-build.scss'
+
 const components = {
-    WPButton,
-    WPNotice,
-    WPTabItem,
-    WPTabs,
-    WPSpinner,
-    WPPluginGrid,
-    WPTooltip,
-    WPPopdownItem,
-    WPPopdownMenu,
-    WPPopdown,
-    WPMetabox,
     WPAccordionItem,
     WPAccordions,
-    WPTag,
-    WPTaglist,
+    WPButton,
+    WPMetabox,
     WPMiniTabItem,
     WPMiniTabs,
     WPModal,
-    WPThemeBox,
+    WPNotice,
     WPPagination,
+    WPPluginGrid,
+    WPPopdown,
+    WPPopdownItem,
+    WPPopdownMenu,
+    WPSpinner,
+    WPTabItem,
     WPTable,
     WPTableColumn,
+    WPTabs,
+    WPTag,
+    WPTaglist,
+    WPThemeBox,
+    WPTooltip,
     // INJECT: Add new components to declarations
 }
 
