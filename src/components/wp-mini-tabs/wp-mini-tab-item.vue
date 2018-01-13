@@ -8,8 +8,7 @@
     export default {
         name: 'wp-mini-tab-item',
         props: {
-            label: String,
-            disabled: Boolean
+            label: String
         },
         data() {
             return {
