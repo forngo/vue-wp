@@ -1,7 +1,7 @@
 {
   "name": "vue-wp",
   "version": "1.0.0",
-  "description": "",
+  "description": "A Vue.js 2.0 UI Toolkit that integrates with the WordPress backend interface to build admin pages.",
   "author": "Alessandro Tesoro",
   "main": "src/index.js",
   "files": [
@@ -10,10 +10,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/Vue-WP/vue-wp"
   },
   "bugs": {
-    "url": ""
+    "url": "https://github.com/Vue-WP/vue-wp"
   },
   "scripts": {
     "dev": "node build/dev-server.js",
