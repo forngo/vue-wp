@@ -20,4 +20,4 @@ Vue.use(VueWP);
 
 ### Usage
 
-You can find the docs here. 
+You can find the documentation here [https://vue-wp.github.io/documentation/](https://vue-wp.github.io/documentation/)
