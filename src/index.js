@@ -19,6 +19,8 @@ import WPTooltip from './components/wp-tooltip'
 import Shepherd from 'tether-shepherd'
 import config, { setOptions } from './utils/config'
 
+import './scss/main-build.scss'
+
 const components = {
     WPAccordionItem,
     WPAccordions,
